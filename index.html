@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #forDrop {
+            border: 1px solid coral;
+        }
+    </style>
+</head>
+<body>
+<div id="modalContainer">
+    <img id="modalImage" src="">
+
+    <div class="slider_small_images_wrapper">
+        <div class="smallImages">
+            <div class="slider_small_images draggable"></div>
+        </div>
+    </div>
+    <div class="right" onclick="changeImageDir(1)">
+        <i class="fa fa-chevron-circle-right"></i>
+    </div>
+    <div class="left">
+        <i class="fa fa-chevron-circle-left" onclick="changeImageDir(-1)"></i>
+    </div>
+    <span id="modalClose">&times;</span>
+</div>
+
+<!--<div id="forDrop" ondrop="drop(event)" ondragover="allowDrop(event)">-->
+
+<!--</div>-->
+<h1 align="center" id="title">
+    Drop Images into bordered area
+</h1>
+<div class="sliderParent">
+    <div class="customSlider" id="forDrop" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+    </div>
+    <div class="slider_small_images_wrapper">
+        <div class="smallImages">
+            <div class="slider_small_images draggable"></div>
+        </div>
+    </div>
+</div>
+<script src="jq.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
